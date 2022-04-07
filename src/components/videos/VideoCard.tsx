@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Image from 'next/image'
 
 type videoProps = {
     thumdnailUrl : string
@@ -26,9 +25,10 @@ const ThumbnailImg = styled.img`
     object-fit: cover;
 `
 
-const VideoDetail = styled.div``
-
-const VideoAuthor = styled.div``
+const VideoDetail = styled.div`
+    display: flex;
+    margin-top: 15px;
+`
 
 const ChannelImg = styled.img`
     height: 40px;
@@ -73,10 +73,10 @@ function VideoCard({
           src={thumdnailUrl}/>
       </VideoThumbnail>
       <VideoDetail>
-          <VideoAuthor>
+          <div>
               <ChannelImg 
               src={channelImg}/>
-          </VideoAuthor>
+          </div>
           <VideoInfo>
               <VideoTitle>{videoTitle}</VideoTitle>
               <ChannelLink>{channelName}</ChannelLink>
