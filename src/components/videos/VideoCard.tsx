@@ -9,7 +9,7 @@ type videoProps = {
     viewsInfo: string
 }
 
-const VideoWrapper = styled.div`
+const VideoCardWrapper = styled.div`
     width: 310px;
     margin-bottom: 30px;
 `
@@ -67,7 +67,7 @@ function VideoCard({
     viewsInfo
 }: videoProps) {
   return (
-    <VideoWrapper>
+    <VideoCardWrapper>
       <VideoThumbnail>
           <ThumbnailImg 
           src={thumdnailUrl}/>
@@ -83,7 +83,7 @@ function VideoCard({
               <Videoview>{viewsInfo}</Videoview>
           </VideoInfo>
       </VideoDetail>
-    </VideoWrapper>
+    </VideoCardWrapper>
   )
 }
 
