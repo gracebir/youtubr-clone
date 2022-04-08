@@ -1,10 +1,23 @@
 import type { NextPage } from 'next';
-import { FaBeer } from 'react-icons/fa';
+import styled from 'styled-components';
+import NavBar from '../components/header/NavBar';
+import Siderbar from '../components/sidebar'
+import Video from '../components/videos';
+
+const MainContainer = styled.div`
+  height: calc(100vh - 70px);
+  display: flex;
+  overflow: hidden;
+`;
 
 const Home: NextPage = () => {
   return (
     <div>
-      <h1>youtube clone <FaBeer/></h1>
+      <NavBar/>
+      <MainContainer>
+        <Siderbar/>
+        <Video/>
+      </MainContainer>
     </div>
   )
 }
