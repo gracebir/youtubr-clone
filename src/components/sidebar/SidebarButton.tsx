@@ -18,7 +18,7 @@ function SidebarButton({
 }: sideButtonProps) {
   return (
     <ButtonWrapper>
-      <Icon/>
+      
       <span>{label}</span>
     </ButtonWrapper>
   )

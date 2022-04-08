@@ -13,7 +13,7 @@ const VideoWrapper = styled.div`
 const VideosContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space;
+    gap: .5em;
     flex-wrap: wrap;
 `
 const Title = styled.h1`
@@ -30,35 +30,35 @@ function Video() {
       </Title>
       <VideosContainer>
         <VideoCard
-        thumdnailUrl='https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jp'
+        thumdnailUrl='https://img.youtube.com/vi/YpTmcCBBdTE/maxresdefault.jpg'
         channelImg='http://aninex.com/images/srvc/web_de_icon.png'
         videoTitle=' Top 5 Programming Languages to Learn in 2021 | Best Programming Languages to Learn'
         viewsInfo='10M Views • 3 Months Ago'
         channelName='FutureCoders'
         />
          <VideoCard
-        thumdnailUrl='https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jp'
+        thumdnailUrl='https://img.youtube.com/vi/YpTmcCBBdTE/maxresdefault.jpg'
         channelImg='http://aninex.com/images/srvc/web_de_icon.png'
         videoTitle=' Top 5 Programming Languages to Learn in 2021 | Best Programming Languages to Learn'
         viewsInfo='10M Views • 3 Months Ago'
         channelName='FutureCoders'
         />
          <VideoCard
-        thumdnailUrl='https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jp'
+        thumdnailUrl='https://img.youtube.com/vi/YpTmcCBBdTE/maxresdefault.jpg'
         channelImg='http://aninex.com/images/srvc/web_de_icon.png'
         videoTitle=' Top 5 Programming Languages to Learn in 2021 | Best Programming Languages to Learn'
         viewsInfo='10M Views • 3 Months Ago'
         channelName='FutureCoders'
         />
          <VideoCard
-        thumdnailUrl='https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jp'
+        thumdnailUrl='https://img.youtube.com/vi/YpTmcCBBdTE/maxresdefault.jpg'
         channelImg='http://aninex.com/images/srvc/web_de_icon.png'
         videoTitle=' Top 5 Programming Languages to Learn in 2021 | Best Programming Languages to Learn'
         viewsInfo='10M Views • 3 Months Ago'
         channelName='FutureCoders'
         />
          <VideoCard
-        thumdnailUrl='https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jp'
+        thumdnailUrl='https://img.youtube.com/vi/YpTmcCBBdTE/maxresdefault.jpg'
         channelImg='http://aninex.com/images/srvc/web_de_icon.png'
         videoTitle=' Top 5 Programming Languages to Learn in 2021 | Best Programming Languages to Learn'
         viewsInfo='10M Views • 3 Months Ago'

@@ -28,6 +28,7 @@ const ThumbnailImg = styled.img`
 const VideoDetail = styled.div`
     display: flex;
     margin-top: 15px;
+    gap: .3em;
 `
 
 const ChannelImg = styled.img`
