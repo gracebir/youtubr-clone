@@ -8,7 +8,6 @@ const VideoWrapper = styled.div`
     height: 100%;
     padding: 15px;
     border-bottom: 1px solid #ddd;
-    overflow-y: scroll;
 `
 const VideosContainer = styled.div`
     display: flex;
