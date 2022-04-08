@@ -1,7 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import SidebarButton from './SidebarButton';
-import { sidebarData } from './dummyData';
+import SidebarButton, { sideButtonProps } from './SidebarButton';
+import {
+  MdHomeFilled, 
+  MdOutlineExplore,
+  MdOutlineVideoLibrary, 
+  MdOutlineSubscriptions
+} from 'react-icons/md'
+import {GrHistory} from 'react-icons/gr'
+import {BsClockHistory} from 'react-icons/bs'
+import {AiOutlineLike} from 'react-icons/ai'
 
 const SidebarWrapper = styled.div`
     height: 100%;
@@ -17,27 +25,52 @@ const SidebarCategory = styled.div`
     margin: 15px 0;
 `;
 
+const Hr = styled.hr`
+  height: 1px;
+  background-color: #e5e5e5;
+  border: none;
+`
+
 function Sidebar() {
   return (
     <SidebarWrapper>
       <SidebarCategory>
-          {sidebarData.splice(0,3)
-          .map((data, i:number)=>(
-              <SidebarButton 
-              key={i} 
-              label={data.title} 
-              Icon={data.Icon}/>
-          ))}
+      <SidebarButton 
+      title='Home'
+      Icon={MdHomeFilled}
+      />
+      <SidebarButton 
+      title='Explore'
+      Icon={MdOutlineExplore}
+      />
+      <SidebarButton 
+      title='Subscription'
+      Icon={MdOutlineSubscriptions}
+      />
       </SidebarCategory>
-      <hr />
+      <Hr/>
       <SidebarCategory>
-      {sidebarData.splice(4,sidebarData.length)
-      .map((data, i:number)=>(
-              <SidebarButton 
-              key={i} 
-              label={data.title} 
-              Icon={data.Icon}/>
-          ))}
+      <SidebarButton 
+      title='Library'
+      Icon={MdOutlineVideoLibrary}
+      />
+      <SidebarButton 
+      title='History'
+      Icon={GrHistory}
+      />
+      <SidebarButton 
+      title='Watch Later'
+      Icon={BsClockHistory}
+      />
+      <SidebarButton 
+      title='Liked Videos'
+      Icon={AiOutlineLike}
+      />
+      <SidebarButton 
+      title='Home'
+      Icon={MdHomeFilled}
+      />
+      
       </SidebarCategory>
     </SidebarWrapper>
   )
