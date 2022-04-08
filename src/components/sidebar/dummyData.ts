@@ -22,10 +22,6 @@ export const sidebarData = [
         Icon: MdOutlineSubscriptions
     },
     {
-        title: 'Trending',
-        Icon: ''
-    },
-    {
         title: 'Library',
         Icon: MdOutlineVideoLibrary
     },
